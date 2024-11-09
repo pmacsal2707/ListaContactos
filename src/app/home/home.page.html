@@ -20,9 +20,14 @@
               <ion-card-title>{{ user.name.first }} {{ user.name.last }}</ion-card-title>
               <b>{{ user.gender }}</b>
               <p>
-                {{ user.location.street.name }}, {{ user.location.street.number }}<br/>
+                <b>Dirección:</b> {{ user.location.street.name }}, {{ user.location.street.number }}<br/>
                 {{ user.location.city }}, {{ user.location.state }}<br/>
                 {{ user.location.country }}
+              </p>
+              <p>
+                <b>Edad:</b> {{ user.dob.age }} años<br/>
+                <b>Correo:</b> {{ user.email }}<br/>
+                <b>Teléfono:</b> {{ user.phone }}<br/>
               </p>
             </ion-card-content>
           </ion-card>
